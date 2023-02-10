@@ -1,0 +1,28 @@
+select * from dojos;
+insert into dojos (name)
+values ('rumble dojo'),
+('master kickers dojo'),
+('persistence dojo');
+DELETE FROM dojos where id='1';
+DELETE FROM dojos where id='2';
+DELETE FROM dojos where id='3';
+insert into dojos (name)
+values ('Smooth Moves Dojo'),
+('Resolution-Martial-Arts Dojo'),
+('KickFit Karate Dojo');
+insert into ninjas (first_name,last_name,age,dojos_id)
+values ('Naruto','Uzumaki',32,4),
+('Sasuke','Uchiha',33,4),
+('Shikamaru','Nara',35,4);
+select * from ninjas;
+insert into ninjas (first_name,last_name,age,dojos_id)
+values ('Kakashi','Hatake',48,5),
+('Might','Guy',50,5),
+('Tsunade','Senju',70,5);
+insert into ninjas (first_name,last_name,age,dojos_id)
+values ('Neji','Hyuga',23,6),
+('Kisame','Hashige',33,6),
+('Kaguya','Otsutsuki',120,6);
+select * from ninjas where dojos_id=4;
+select * from ninjas where dojos_id=6; 
+select * from ninjas where dojos_id=6 and id=9;
